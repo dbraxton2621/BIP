@@ -7,8 +7,8 @@ frontend:
         - npm install -g @expo/cli
     build:
       commands:
-        # Replace expo export:web with just expo export
-        - npx expo export
+        # Add environment variable to ensure proper bundling
+        - EXPO_NO_DOTENV=1 npx expo export
   artifacts:
     baseDirectory: dist
     files:
