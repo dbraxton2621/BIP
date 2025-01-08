@@ -7,6 +7,7 @@ frontend:
         - nvm install 22
         - nvm use 22
         - npm install
+        - node -v
         - npm install --silent --global expo-cli
         - |-
           if [ -f yarn.lock ]; then
@@ -18,10 +19,9 @@ frontend:
           fi
     build:
       commands:
-        - 'expo build:web'
-        - 'npm run build'
+        - npx expo export:web
   artifacts:
-    baseDirectory: web-build
+    baseDirectory: dist
     files:
       - '**/*'
   cache:
