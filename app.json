@@ -51,6 +51,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "c83c1254-ad65-4cd2-b8e5-e50e4f09f1b4"
+      }
+    },
+    "owner": "dbraxton2621"
   }
 }
